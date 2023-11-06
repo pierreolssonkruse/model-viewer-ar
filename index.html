@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqua Expert AR</title>
+    <script type="module" src="./app.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@google/model-viewer/dist/model-viewer.css" />
+</head>
+<body>
+<div class="model-container"> 
+  <img src="AquaExpert_logo_devis.png" alt="Logo" class="logo"/>
+  <model-viewer 
+      src="Water_filter Unit_ANIL.glb" 
+      alt="3D modell" 
+      auto-rotate 
+      camera-controls 
+      ar 
+      ar-modes="webxr scene-viewer quick-look" 
+      ios-src="Water_filter Unit_ANIL.usdz"
+      ar-scale="auto"
+      scale="1 1 1"
+      shadow-intensity="1"
+      ar-placement="floor"
+      camera-orbit="0deg 90deg 3m">
+      <button id="ar-button" slot="ar-button">Visa i AR</button>
+  </model-viewer>
+</div>
+</body>
+</html>
